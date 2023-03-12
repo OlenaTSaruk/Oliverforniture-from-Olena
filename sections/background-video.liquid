@@ -7,10 +7,10 @@
 {%- endcapture -%}
 
 <section class="Section" id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="background-video" data-section-settings='{{ section_settings }}'>
-  <div class="ImageHero {% if section.settings.section_size != 'normal' %}ImageHero--{{ section.settings.section_size }}{% endif %}" style="position: relative">
-    <div class="ImageHero__VideoHolder">
+ <div class="ImageHero {% if section.settings.section_size != 'normal' %}ImageHero--{{ section.settings.section_size }}{% endif %}" style="position: relative">
 
-{% comment %} Overlay Text {% endcomment %}
+  <div class="ImageHero__VideoHolder">
+    {% comment %} Overlay Text {% endcomment %}
       <div class="ImageHero__ContentOverlay">
         <header class="SectionHeader" style="position: absolute; z-index: 9999999; text-align: center">
           {%- if section.settings.sub_description != blank -%}

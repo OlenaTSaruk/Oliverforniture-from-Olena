@@ -60,16 +60,28 @@
         "grid_desktop_items_per_row": 3
       }
     },
-    "98fb028a-2fbf-4015-a138-0bcfa066b5d8": {
-      "type": "background-video",
-      "custom_css": [
-
+    "74b9c653-1618-4517-8846-223efc6411e4": {
+      "type": "add-video",
+      "blocks": {
+        "template--18208475808019__74b9c653-1618-4517-8846-223efc6411e4-167865289392215abb-0": {
+          "type": "video",
+          "settings": {
+            "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/46b8b4b251a44026859bff724350ed5b.mp4",
+            "overlay_opacity": 0,
+            "title": "THE CHAIR THAT ROCKS",
+            "text": "<h3><a href=\"https:\/\/oliverfurniture.com\/collections\/wood-baby-toddler-rocker-1\" target=\"_self\">WOOD BABY & TODDLER ROCKER<\/a><\/h3>",
+            "color_text": "#ffffff",
+            "button_label": "",
+            "button_link": "",
+            "color_btn_bg": "#ffffff",
+            "color_btn_text": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "template--18208475808019__74b9c653-1618-4517-8846-223efc6411e4-167865289392215abb-0"
       ],
       "settings": {
-        "sub_description": "THE CHAIR THAT ROCKS",
-        "title": "WOOD BABY & TODDLER ROCKER",
-        "section_size": "large",
-        "video_url": "https:\/\/player.vimeo.com\/video\/571607762?api=1&loop=1&muted=1&controls=0&portrait=0&byline=0&title=0&background=1&autoplay=1"
       }
     },
     "3a4ce63a-f686-4ef2-97a4-f3565d6d2ee6": {
@@ -139,14 +151,6 @@
         "button_background": "#ffffff"
       }
     },
-    "a8b0e56a-def6-40f1-9442-ed0bc2135e73": {
-      "type": "add-video",
-      "settings": {
-        "description": "Description",
-        "button_link": "",
-        "product_description_video": "https:\/\/player.vimeo.com\/video\/571607762?api=1&loop=1&muted=1&controls=0&portrait=0&byline=0&title=0&background=1&autoplay=1"
-      }
-    },
     "ba379c06-a842-42da-85ed-5fc8469780e5": {
       "type": "collections",
       "blocks": {
@@ -183,13 +187,31 @@
         "grid_desktop_items_per_row": 4
       }
     },
-    "97f0ab63-6123-4a3d-bdb9-b4d8068eb240": {
-      "type": "background-video",
+    "09e61c7b-67c8-4320-b6ce-d05cece25283": {
+      "type": "add-video",
+      "blocks": {
+        "template--18208475808019__09e61c7b-67c8-4320-b6ce-d05cece25283-1678661070c9fc448a-0": {
+          "type": "video",
+          "settings": {
+            "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/76cd5ee4eb874d46bf0b8a9c34d1a2d6.mp4",
+            "overlay_opacity": 0,
+            "title": "INSPIRATION",
+            "text": "<h3><a href=\"https:\/\/oliverfurniture.com\/pages\/small-stories\" target=\"_self\">SMALL STORIES<\/a><\/h3><p>Discover the small playfull universes from around the world.<\/p>",
+            "color_text": "#ffffff",
+            "button_label": "",
+            "button_link": "",
+            "color_btn_bg": "#ffffff",
+            "color_btn_text": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "template--18208475808019__09e61c7b-67c8-4320-b6ce-d05cece25283-1678661070c9fc448a-0"
+      ],
+      "custom_css": [
+        "p {font-size: 13px;}"
+      ],
       "settings": {
-        "sub_description": "Description",
-        "title": "Description",
-        "section_size": "preserveRatio",
-        "video_url": "https:\/\/player.vimeo.com\/video\/572039497?api=1&loop=1&muted=1&controls=0&portrait=0&byline=0&title=0&background=1&autoplay=1"
       }
     },
     "6c161026-1077-40d4-acaf-54120fe68b12": {
@@ -303,13 +325,12 @@
   "order": [
     "slideshow",
     "featured-collections",
-    "98fb028a-2fbf-4015-a138-0bcfa066b5d8",
+    "74b9c653-1618-4517-8846-223efc6411e4",
     "3a4ce63a-f686-4ef2-97a4-f3565d6d2ee6",
     "864d879c-fa6d-49fe-bf56-bc86fa1d5588",
     "7e989844-6796-4e9a-b855-bfab4db48a30",
-    "a8b0e56a-def6-40f1-9442-ed0bc2135e73",
     "ba379c06-a842-42da-85ed-5fc8469780e5",
-    "97f0ab63-6123-4a3d-bdb9-b4d8068eb240",
+    "09e61c7b-67c8-4320-b6ce-d05cece25283",
     "6c161026-1077-40d4-acaf-54120fe68b12",
     "blog-posts",
     "shop-the-look",
