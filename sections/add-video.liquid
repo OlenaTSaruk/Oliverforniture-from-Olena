@@ -1,0 +1,45 @@
+{%- capture section_settings -%}
+  {
+    "videoType": {{ section.settings.video_url.type | json }},
+    "videoId": {{ section.settings.video_url.id | json }},
+    "requestHost": {{ request.host | json }}
+  }
+{%- endcapture -%}
+<div class="section section-add-video" data-section-type="background-video">
+  <div>{{ section.settings.product_description_video }}</div>
+</div>
+
+{% schema %}
+  {
+    "name": "Section with video",
+    "tag": "section",
+    "class": "section section-with-viveo",
+    "settings": [
+      {
+        "type": "text",
+        "id": "description",
+        "label": "Heading",
+        "default": "Description"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button link"
+      },
+      {
+        "type": "video_url",
+        "id": "product_description_video",
+        "label": "Product description video",
+        "accept": [
+          "youtube",
+          "vimeo"
+          ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Section with video"
+      }
+    ]
+  }
+{% endschema %}

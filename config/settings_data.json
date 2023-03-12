@@ -29,7 +29,7 @@
     "base_text_font_size": 14,
     "currency_code_enabled": false,
     "show_page_transition": false,
-    "show_button_transition": false,
+    "show_button_transition": true,
     "search_mode": "product,article",
     "product_show_price_on_hover": false,
     "product_show_secondary_image": true,
@@ -123,6 +123,9 @@
           "footer-1",
           "footer-2"
         ],
+        "custom_css": [
+          "footer {background: #ebe9e5; color: #6a6a6a;}"
+        ],
         "settings": {
           "show_payment_methods": true,
           "show_country_selector": true,
@@ -131,15 +134,19 @@
       },
       "popup": {
         "type": "popup",
+        "custom_css": [
+          ".NewsletterPopup {background: #a9a291; color: #fff;}",
+          ".Button {background: #fff; color: #a9a291;}"
+        ],
         "settings": {
-          "show_popup": false,
-          "show_only_on_index": true,
-          "show_only_for_visitors": true,
+          "show_popup": true,
+          "show_only_on_index": false,
+          "show_only_for_visitors": false,
           "show_only_once": true,
-          "title": "Popup",
-          "content": "<p>You can use this popup to display some useful information to your customers.<\/p>",
+          "title": "NEWSLETTER",
+          "content": "<p>Receive exciting news in your inbox. Fill in your email below.<\/p>",
           "show_newsletter": true,
-          "apparition_delay": 5
+          "apparition_delay": 2
         }
       }
     },

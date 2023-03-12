@@ -22,8 +22,8 @@
         "slide-1"
       ],
       "settings": {
-        "show_fullscreen": false,
-        "show_arrow": true,
+        "show_fullscreen": true,
+        "show_arrow": false,
         "autoplay": true,
         "cycle_speed": 8,
         "text_color": "#ffffff",
@@ -47,9 +47,135 @@
       "block_order": [
         "featured-collection-0"
       ],
+      "custom_css": [
+        ".rating {display: none;}"
+      ],
       "settings": {
         "title": "zzz..",
-        "layout_mode": "carousel",
+        "layout_mode": "grid",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false,
+        "grid_mobile_items_per_row": "1",
+        "grid_desktop_items_per_row": 3
+      }
+    },
+    "98fb028a-2fbf-4015-a138-0bcfa066b5d8": {
+      "type": "background-video",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "sub_description": "THE CHAIR THAT ROCKS",
+        "title": "WOOD BABY & TODDLER ROCKER",
+        "section_size": "large",
+        "video_url": "https:\/\/player.vimeo.com\/video\/571607762?api=1&loop=1&muted=1&controls=0&portrait=0&byline=0&title=0&background=1&autoplay=1"
+      }
+    },
+    "3a4ce63a-f686-4ef2-97a4-f3565d6d2ee6": {
+      "type": "timeline",
+      "blocks": {
+        "03aa3309-f0bd-4351-93ca-83109a644f27": {
+          "type": "item",
+          "settings": {
+            "apply_overlay": false,
+            "title": "0-12 months",
+            "subheading": "STORAGE",
+            "heading": "WOOD WARDROBES",
+            "content": "<p>The wardrobes from Oliver Furniture’s Wood Collection are simple and practical pieces with room for everything from toys to pyjamas.<br\/><\/p><p>We appreciate simple aesthetics, spaciousness, and a long lifespan.<\/p>"
+          }
+        },
+        "9409ee85-04e2-4737-ad78-11260c6494de": {
+          "type": "item",
+          "settings": {
+            "apply_overlay": true,
+            "title": "1-3 years",
+            "subheading": "Sub-heading",
+            "heading": "Heading",
+            "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "03aa3309-f0bd-4351-93ca-83109a644f27",
+        "9409ee85-04e2-4737-ad78-11260c6494de"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "text_color": "#1c1b1b"
+      }
+    },
+    "864d879c-fa6d-49fe-bf56-bc86fa1d5588": {
+      "type": "text-with-image",
+      "custom_css": [
+        "a.Link--underline {font-family: Poppins, sans-serif; font-weight: 400; color: #4a4a4a; padding: 12px 40px; margin-top: 20px; margin-bottom: 5px; border: 1px solid #4a4a4a; font-size: 9px; letter-spacing: 0.2em;}",
+        ".Link--underline:before {display: none;}",
+        ".AspectRatio {width: 720px; height: 540px; margin: 0; padding-left: 50px;}",
+        ".FeatureText {text-align: center; padding: 120px 120px;}",
+        ".Image--slideRight,.Image--slideLeft {transition: none;}",
+        ".FeatureText--imageLeft .FeatureText__Content,.FeatureText--imageLeft .AspectRatio {margin: auto;}"
+      ],
+      "settings": {
+        "subheading": "STORAGE",
+        "title": "WOOD WARDROBES",
+        "image": "shopify:\/\/shop_images\/wardrope.webp",
+        "image_position": "left",
+        "content": "<p>The wardrobes from Oliver Furniture’s Wood Collection are simple and practical pieces with room for everything from toys to pyjamas.<\/p><p>We appreciate simple aesthetics, spaciousness, and a long lifespan.<\/p>",
+        "link_text": "SEE AL WOOD WARDROBES HERE",
+        "link_url": "shopify:\/\/pages\/contact"
+      }
+    },
+    "7e989844-6796-4e9a-b855-bfab4db48a30": {
+      "type": "slideshow",
+      "settings": {
+        "show_fullscreen": false,
+        "show_arrow": false,
+        "autoplay": true,
+        "cycle_speed": 5,
+        "text_color": "#ffffff",
+        "button_color": "#363636",
+        "button_background": "#ffffff"
+      }
+    },
+    "a8b0e56a-def6-40f1-9442-ed0bc2135e73": {
+      "type": "add-video",
+      "settings": {
+        "description": "Description",
+        "button_link": "",
+        "product_description_video": "https:\/\/player.vimeo.com\/video\/571607762?api=1&loop=1&muted=1&controls=0&portrait=0&byline=0&title=0&background=1&autoplay=1"
+      }
+    },
+    "ba379c06-a842-42da-85ed-5fc8469780e5": {
+      "type": "collections",
+      "blocks": {
+        "template--18187719409939__ba379c06-a842-42da-85ed-5fc8469780e5-167848427242f5aade-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "title": "",
+            "grid_items_count": 8,
+            "button_text": "View all products"
+          }
+        },
+        "a8cfda33-2c99-4d99-a2bf-d001bbb1eca1": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "title": "",
+            "grid_items_count": 8,
+            "button_text": "View all products"
+          }
+        }
+      },
+      "block_order": [
+        "template--18187719409939__ba379c06-a842-42da-85ed-5fc8469780e5-167848427242f5aade-0",
+        "a8cfda33-2c99-4d99-a2bf-d001bbb1eca1"
+      ],
+      "settings": {
+        "title": "Collections",
+        "layout_mode": "grid",
         "show_product_info": true,
         "show_vendor": false,
         "show_color_swatch": false,
@@ -57,151 +183,26 @@
         "grid_desktop_items_per_row": 4
       }
     },
-    "timeline": {
-      "type": "timeline",
-      "disabled": true,
-      "blocks": {
-        "item-1": {
-          "type": "item",
-          "settings": {
-            "apply_overlay": true,
-            "title": "",
-            "subheading": "STORAGE",
-            "heading": "Heading",
-            "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "item-1"
-      ],
+    "97f0ab63-6123-4a3d-bdb9-b4d8068eb240": {
+      "type": "background-video",
       "settings": {
-        "text_color": "#ffffff"
+        "sub_description": "Description",
+        "title": "Description",
+        "section_size": "preserveRatio",
+        "video_url": "https:\/\/player.vimeo.com\/video\/572039497?api=1&loop=1&muted=1&controls=0&portrait=0&byline=0&title=0&background=1&autoplay=1"
       }
     },
-    "collection-list": {
-      "type": "collection-list",
-      "disabled": true,
-      "blocks": {
-        "collection-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image_alignment": "bottom right",
-            "content_position": "middleLeft",
-            "subheading": "",
-            "title": "Latex",
-            "button_text": "View products",
-            "button_link": "",
-            "apply_overlay": false
-          }
-        },
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image_alignment": "center center",
-            "content_position": "bottomLeft",
-            "subheading": "",
-            "title": "Vinyl",
-            "button_text": "View products",
-            "button_link": "",
-            "apply_overlay": false
-          }
-        },
-        "collection-2": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image_alignment": "center center",
-            "content_position": "bottomLeft",
-            "subheading": "",
-            "title": "Spandex",
-            "button_text": "View products",
-            "button_link": "",
-            "apply_overlay": false
-          }
-        },
-        "6cf9fbee-f54a-4970-a43c-19133b8f8774": {
-          "type": "collection",
-          "settings": {
-            "collection": "0-12-months",
-            "image_alignment": "center center",
-            "content_position": "bottomLeft",
-            "subheading": "Sub-heading",
-            "title": "Collection name",
-            "button_text": "View products",
-            "button_link": "",
-            "apply_overlay": true
-          }
-        }
-      },
-      "block_order": [
-        "collection-0",
-        "collection-1",
-        "collection-2",
-        "6cf9fbee-f54a-4970-a43c-19133b8f8774"
-      ],
+    "6c161026-1077-40d4-acaf-54120fe68b12": {
+      "type": "recently-viewed-products",
       "settings": {
-        "image_size": "small",
-        "add_spacing": true,
-        "expand_collection": true,
-        "stack_on_mobile": true,
-        "text_color": "{{ shop.brand.colors.secondary[0].background }}",
-        "button_color": "{{ shop.brand.colors.secondary[0].foreground }}"
-      }
-    },
-    "featured-product": {
-      "type": "featured-product",
-      "disabled": true,
-      "blocks": {
-        "product-meta": {
-          "type": "product_meta",
-          "settings": {
-            "show_vendor": false,
-            "show_sku": false,
-            "show_product_rating": true,
-            "show_taxes_included": false
-          }
-        },
-        "share-buttons": {
-          "type": "share_buttons",
-          "settings": {
-          }
-        },
-        "variant-selector": {
-          "type": "variant_selector",
-          "settings": {
-            "selector_mode": "dropdown",
-            "show_color_swatch": false,
-            "show_color_carousel": false,
-            "size_chart": ""
-          }
-        },
-        "buy-buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_price_in_button": false,
-            "show_payment_button": false
-          }
-        }
-      },
-      "block_order": [
-        "product-meta",
-        "share-buttons",
-        "variant-selector",
-        "buy-buttons"
-      ],
-      "settings": {
-        "subheading": "Today's",
-        "title": "Featured product",
-        "show_headings_on_mobile": true,
-        "product": "black-latex-cat-mask"
+        "title": "Recently viewed",
+        "show_product_info": false,
+        "show_vendor": true,
+        "show_color_swatch": true
       }
     },
     "blog-posts": {
       "type": "blog-posts",
-      "disabled": true,
       "blocks": {
         "blog-0": {
           "type": "blog",
@@ -216,8 +217,8 @@
       "settings": {
         "subheading": "STORAGE",
         "title": "NURSERY DRESSERS",
-        "show_category": true,
-        "button_link": "",
+        "show_category": false,
+        "button_link": "shopify:\/\/collections",
         "button_text": "View all"
       }
     },
@@ -302,9 +303,14 @@
   "order": [
     "slideshow",
     "featured-collections",
-    "timeline",
-    "collection-list",
-    "featured-product",
+    "98fb028a-2fbf-4015-a138-0bcfa066b5d8",
+    "3a4ce63a-f686-4ef2-97a4-f3565d6d2ee6",
+    "864d879c-fa6d-49fe-bf56-bc86fa1d5588",
+    "7e989844-6796-4e9a-b855-bfab4db48a30",
+    "a8b0e56a-def6-40f1-9442-ed0bc2135e73",
+    "ba379c06-a842-42da-85ed-5fc8469780e5",
+    "97f0ab63-6123-4a3d-bdb9-b4d8068eb240",
+    "6c161026-1077-40d4-acaf-54120fe68b12",
     "blog-posts",
     "shop-the-look",
     "1669030559665b340b",

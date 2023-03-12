@@ -66,8 +66,8 @@
     },
     "newsletter": {
       "success": "You have been subscribed to our newsletter.",
-      "input": "Enter your email address",
-      "submit": "Subscribe"
+      "input": "Your email",
+      "submit": "Submit"
     }
   },
   "search": {
@@ -122,8 +122,8 @@
       "play": "Play video"
     },
     "newsletter": {
-      "input": "Enter your email",
-      "submit": "Subscribe",
+      "input": "Your email",
+      "submit": "Submit",
       "success": "You have been subscribed to our newsletter."
     }
   },
