@@ -147,10 +147,10 @@
           "settings": {
             "collection": "wood-mini",
             "image": "shopify:\/\/shop_images\/collection_mini-1664872994861.webp",
-            "subheading": "Sub-heading",
+            "subheading": "",
             "title": "WOOD MINI+",
-            "button_text": "View products",
-            "button_link": "",
+            "button_text": "SEE THE MINI+ SERIES HERE",
+            "button_link": "shopify:\/\/collections\/wood-mini",
             "apply_overlay": false
           }
         },
@@ -159,10 +159,10 @@
           "settings": {
             "collection": "wood-original",
             "image": "shopify:\/\/shop_images\/collection_original-1664872994863.webp",
-            "subheading": "Sub-heading",
+            "subheading": "",
             "title": "WOOD ORIGINAL",
-            "button_text": "View products",
-            "button_link": "",
+            "button_text": "SEE THE ORIGINAL SERIES HERE",
+            "button_link": "shopify:\/\/collections\/wood-original",
             "apply_overlay": false
           }
         },
@@ -171,10 +171,10 @@
           "settings": {
             "collection": "seaside-lille",
             "image": "shopify:\/\/shop_images\/collection_lille-1664872994859.jpg",
-            "subheading": "Sub-heading",
+            "subheading": "",
             "title": "SEASIDE LILLE+",
-            "button_text": "View products",
-            "button_link": "",
+            "button_text": "SEE THE LILLE+ SERIES HERE",
+            "button_link": "shopify:\/\/collections\/seaside-lille",
             "apply_overlay": false
           }
         },
@@ -183,10 +183,10 @@
           "settings": {
             "collection": "seaside-classic",
             "image": "shopify:\/\/shop_images\/collection_original-1664872994863.webp",
-            "subheading": "Sub-heading",
-            "title": "Collection name",
-            "button_text": "View products",
-            "button_link": "",
+            "subheading": "",
+            "title": "SEASIDE CLASSIC",
+            "button_text": "SEE THE CLASSIC SERIES HERE",
+            "button_link": "shopify:\/\/collections\/seaside-classic",
             "apply_overlay": false
           }
         }
@@ -197,7 +197,13 @@
         "template--18208475808019__36a68e35-cc76-42d2-a170-efbc580dad43-1678713516bc80806b-2",
         "c7e3f25b-749f-4ed7-bcf3-917f0ace5b57"
       ],
+      "custom_css": [
+        ".SectionHeader__Heading {font-size: 11px; letter-spacing: 0.2em; margin-top: 20px; margin-bottom: 5px;}"
+      ],
       "settings": {
+        "title": "FOUR DIFFERENT BED SERIES",
+        "title_head": "PREFER A SLEEP-OVER BY THE SEASIDE OR IN THE WOODS...",
+        "title_content": "The four different bed series from Oliver Furniture are designed to grow with both child and family for generations. Individually, the different series can be converted, to prolong its lifespan, which is integral to the way Oliver Furniture thinks about sustainability."
       }
     },
     "09e61c7b-67c8-4320-b6ce-d05cece25283": {

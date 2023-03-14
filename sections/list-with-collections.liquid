@@ -11,21 +11,54 @@
 
 <section id="section-{{ section.id }}">
   <div class="collectiont_discription">
-    <h3>1</h3>
-    <h3>2</h3>
-    <p>123</p>
+
+    {%- if section.settings.title != blank -%}
+      <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.title | escape }}</h3>
+    {%- endif -%}
+
+    {%- if section.settings.title_head != blank -%}
+      <h3 class="section_header SectionHeader__Heading Heading u-h6" style="font-size: 20px">{{ section.settings.title_head | escape }}</h3>
+    {%- endif -%}
+
+    {%- if section.settings.title_content != blank -%}
+      <p class="SectionHeader__Content">{{ section.settings.title_content | escape }}</p>
+    {%- endif -%}
   </div>
 
   <div class="collections">
     {% for block in section.blocks %}
       <div class="collection">
+
         {% if block.settings.collection != blank %}
           <a href="{{ block.settings.collection }}">
             {{ block.settings.image | img_url: '323x451' | img_tag  }}
           </a>
-          
+
+          <div class="collection__title">
+            {%- if block.settings.subheading != blank or block.settings.title != blank or block.settings.content != blank -%}
+              <header class="SectionHeader">
+                {%- if block.settings.subheading != blank -%}
+                  <p class="SectionHeader__SubHeading Heading u-h6">{{ block.settings.subheading | escape }}</p>
+                {%- endif -%}
+
+                {%- if block.settings.title != blank -%}
+                  <p class="SectionHeader__Heading">{{ block.settings.title | escape }}</p>
+                {%- endif -%}
+
+                {%- if block.settings.content != blank -%}
+                  <div class="SectionHeader__Description Rte">
+                    {{ block.settings.content }}
+                  </div>
+                {%- endif -%}
+
+                {%- if block.settings.button_link != blank -%}
+                  <a href="{{ block.settings.button_link }}" class="Link_Button">{{ block.settings.button_text | escape }}</a>
+                {%- endif -%}
+              </header>
+            {%- endif -%}
+          </div>
         {% else %}
-        <div>Add "Collection" please.</div>
+          <div>Add "Collection" please.</div>
         {% endif %}
       </div>
     {% endfor %}
@@ -82,10 +115,41 @@
   padding-top: 120px;
   padding-bottom: 120px;
 }
+.collectiont_discription {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 140px;
+}
 .collections {
     display: flex;
     justify-content: space-evenly;
   }
+.SectionHeader__Heading, {
+  font-size: 11px;
+  letter-spacing: .2em;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.Link_Button {
+  font-size: 11px;
+  color: #9b9b9b;
+  letter-spacing: .2em;
+  margin-top: 5px;
+  padding-left: 0;
+  text-decoration: underline;
+  padding-top: 0;
+}
+.SectionHeader__Content {
+  font-weight: 300;
+  font-style: normal;
+  font-size: 13px;
+  margin: 20px 20% 5px;
+  line-height: 1.65;
+  text-align: center;
+  color: #1c1b1b
+}
+
 </style>
 
 {% schema %}
@@ -95,6 +159,24 @@
   "class": "section",
   "max_blocks": 18,
   "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Sub-heading",
+          "default": "Collections"
+        },
+        {
+          "type": "text",
+          "id": "title_head",
+          "label": "Heading",
+          "default": "Inscription"
+        },
+        {
+          "type": "text",
+          "id": "title_content",
+          "label": "Text",
+          "default": "Add your text"
+        }
     // {
     //   "type": "range",
     //   "id": "coll_row",
@@ -168,7 +250,7 @@
         {
           "type": "image_picker",
           "id": "image",
-          "label": "Image111",
+          "label": "Image",
           "info": "1120 x 1200px.jpg recommended"
         },
         // {
