@@ -1,24 +1,79 @@
 <section id="section-{{ section.id }}" class="Section Section--spacingNormal" data-section-id="{{ section.id }}" data-section-type="timeline">
   <div class="Container">
+
+    {% comment %} {%- if block.settings.collection != empty -%}
+      <h2 class="SectionHeader__Heading Heading u-h1">{{ 'home_page.onboarding.collection_title' | t }}</h2>
+    {%- endif -%} {% endcomment %}
+    <div class="products">
+      {% assign first_tab = true %}
+        {% for block in section.blocks %}
+          {% if block.settings.collection != empty %}
+          <div class="propuct_list {%if first_tab == true %}active{%endif%}">
+            {% if block.settings.collection.all_products_count > 0 %}
+              <div>
+                {%- for product in block.settings.collection.products limit: 4 -%}
+                  <div class="product_setting ">
+                    {%- render 'product-item', product: product, show_product_info: section.settings.show_product_info, show_vendor: section.settings.show_vendor, show_labels: true -%}
+                  </div>
+                {% endfor %}
+              </div>
+            {% endif %}
+            {% if fierst_tab == true %}
+              {% assign first_tab = false %}
+            {% endif %}
+          </div>
+          {% endif %}
+        {% endfor %}
+    </div>
+
+
+
+
+
+
     <div class="Timeline">
       <div class="Timeline__ListItem">
+
         {%- for block in section.blocks -%}
           <div {{ block.shopify_attributes }} class="Timeline__Item {% if forloop.first %}is-selected{% endif %}" data-index="{{ forloop.index0 }}">
-            <div class="Timeline__ImageWrapper {% if block.settings.apply_overlay %}Image--contrast{% endif %}" {% if block.settings.image %}style="background: url({{ block.settings.image | img_url: '1x1' }})"{% endif %}>
-              {%- if block.settings.image -%}
+        <div class="Timeline__ImageWrapper {% if block.settings.apply_overlay %}Image--contrast{% endif %}" {% if block.settings.image %}style="background: url({{ block.settings.image | img_url: '1x1' }})"{% endif %}>
+
+      {%- if block.settings.collection != empty -%}
+      {%- for product in collection.products %}
+          <div class="collection_prod">
+            {%- render 'product-item', product: product, show_product_info: section.settings.show_product_info, show_vendor: section.settings.show_vendor, show_color_swatch: section.settings.show_color_swatch, show_labels: true -%}
+          </div>
+      {%- else -%}
+        <h2 class="SectionHeader__Heading Heading u-h1">{{ 'home_page.onboarding.collection_title' | t }}</h2>
+      {% endfor %}
+      {%- endif -%}
+
+
+
+
+      {% comment %} ++++++++++++++++++++++++++++ {% endcomment %}
+      {%- for product in block.settings.collection.products limit: 4 -%}
+        <div class="collection_prod">
+          {%- render 'product-item', product: product, show_product_info: section.settings.show_product_info, show_labels: true -%}
+        </div>
+      {%endfor%}
+
+              {% comment %} {%- if block.settings.image -%}
                 <div class="Timeline__Image Image--lazyLoad hide-no-js" data-bgset="{{ block.settings.image | img_url: 'x650' }} [(max-width: 640px)] | {{ block.settings.image | img_url: '1000x' }}"></div>
 
                 <noscript>
                   <div class="Timeline__Image" style="background-image: url({{ block.settings.image | img_url: '1000x' }})"></div>
                 </noscript>
               {%- else -%}
-                <div class="Timeline__Image">
+
+
+              <div class="Timeline__Image">
                   <div class="PlaceholderBackground">
                     {%- capture placeholder -%}{% cycle 'lifestyle-1', 'lifestyle-2' %}{%- endcapture -%}
                     {{ placeholder | placeholder_svg_tag: 'PlaceholderBackground__Svg PlaceholderSvg--dark' }}
                   </div>
                 </div>
-              {%- endif -%}
+              {%- endif -%}{% endcomment %}
             </div>
 
             {%- capture section_inner -%}
@@ -69,6 +124,14 @@
   #section-{{ section.id }} .Timeline__ListItem {
     color: {{ section.settings.text_color }};
   }
+  .products {
+    display: flex;
+  }
+  .product_setting {
+    padding: 30px;
+    width: 273px;
+    height: 325px;
+  }
 </style>
 
 {% schema %}
@@ -88,11 +151,16 @@
       "type": "item",
       "name": "Item",
       "settings": [
+        // {
+        //   "type": "image_picker",
+        //   "id": "image",
+        //   "label": "Image",
+        //   "info": "1200 x 1200px .jpg recommended"
+        // },
         {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image",
-          "info": "1200 x 1200px .jpg recommended"
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection"
         },
         {
           "type": "checkbox",
