@@ -3,7 +3,7 @@
 
     {% comment %} {%- if block.settings.collection != empty -%}
       <h2 class="SectionHeader__Heading Heading u-h1">{{ 'home_page.onboarding.collection_title' | t }}</h2>
-    {%- endif -%} {% endcomment %}
+    {%- endif -%}
     <div class="products">
       {% assign first_tab = true %}
         {% for block in section.blocks %}
@@ -25,7 +25,7 @@
           {% endif %}
         {% endfor %}
     </div>
-
+{% endcomment %}
 
 
 
